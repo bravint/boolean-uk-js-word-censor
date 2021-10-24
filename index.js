@@ -6,11 +6,11 @@ function whySayThat(text, censor, replace) {
 let textArray = text.split(' ');
 let censorArray = censor.split(' ');
 let counter = 0;
-    for (i=0; i < textArray.length; i ++) {
+    for (i=0; i < textArray.length; i++) {
         for (j=0; j < censorArray.length; j++) {
             if (textArray[i] == censorArray[j]) {
             textArray[i] = replace;
-            counter +=1;
+            counter++;
             }
         }
     }
